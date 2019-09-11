@@ -1,0 +1,169 @@
+extends layout
+
+block content
+  //- navbar
+  nav.navbar.navbar-expand-sm.navbar-dark.bg-dark
+    .container     
+      a.navbar-brand(href="/index") Glozzom
+      button.navbar-toggler(data-toggle="collapse" data-target="#navbarCollapse")
+        span.navbar-toggler-icon
+      .collapse.navbar-collapse#navbarCollapse
+        ul.navbar-nav.ml-auto
+          li.nav-item.active
+            a.nav-link(href="/index") Home
+          li.nav-item
+            a.nav-link(href="/about") About Us
+          li.nav-item
+            a.nav-link(href="/service") Services
+          li.nav-item
+            a.nav-link(href="/blog") Blog
+          li.nav-item
+            a.nav-link(href="/contact") Contact
+
+  //- showcase slider
+  section#showcase
+    .carousel.slide#myCarousel(data-ride="carousel")
+      ol.carousel-indicators
+        li.active(data-target="#myCarousel" data-slide-to="0")
+        li(data-target="#myCarousel" data-slide-to="1")
+        li(data-target="#myCarousel" data-slide-to="2")
+
+      .carousel-inner
+        .carousel-item.carousel-image-1.active
+          .container 
+            .carousel-caption.d-none.d-sm-block.text-right.mb-5
+              h1.display-3 Heading One
+              p.lead Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    | Rem maiores dolore corporis.
+              a.btn.btn-danger.btn-lg(a href="#") Sign Up Now
+
+        .carousel-item.carousel-image-2
+          .container 
+            .carousel-caption.d-none.d-sm-block.mb-5
+              h1.display-3 Heading Two
+              p.lead Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    | Rem maiores dolore corporis.
+              a.btn.btn-danger.btn-lg(a href="#") Learn More
+
+        .carousel-item.carousel-image-3
+          .container 
+            .carousel-caption.d-none.d-sm-block.text-right.mb-5
+              h1.display-3 Heading Three
+              p.lead Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    | Rem maiores dolore corporis.
+              a.btn.btn-danger.btn-lg(a href="#") View More
+
+      a.carousel-control-prev(href="#myCarousel" data-slide="prev")
+        span.carousel-control-prev-icon
+      a.carousel-control-next(href="#myCarousel" data-slide="next")
+        span.carousel-control-next-icon
+  
+  //- home heading section
+  section.py-5#home-icons
+    .container
+      .row
+        .col-md-4.mb-4.text-center
+          i.fas.fa-cog.fa-3x.mb-2
+          h3 Turning Gears
+          p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, doloribus.
+        .col-md-4.mb-4.text-center
+          i.fas.fa-cloud.fa-3x.mb-2
+          h3 Sending Data
+          p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, doloribus.
+        .col-md-4.mb-4.text-center
+          i.fas.fa-cart-plus.fa-3x.mb-2
+          h3 Making Money
+          p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, doloribus.
+
+  //- home heading section
+  section.p-5#home-heading
+    .dark-overlay 
+      .row  
+        .col
+          .container.pt-5
+            h1 Are You Ready To Get Started?
+            p.d-none.d-md-block Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, nobis.
+
+  //- info section
+  section.py-3#info
+    .container  
+      .row
+        .col-md-6.align-self-center
+          h3 Lorem Ipsum
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquam excepturi 
+            | voluptates quo repellendus enim recusandae, fugiat pariatur et odit.
+          a.btn.btn-outline-danger.btn-lg(href="/about") Learn More
+        .col-md-6
+          img.img-fluid(src="images/laptop.png")
+
+  //- video play
+  section#video-play
+    .dark-overlay 
+      .row
+        .col
+          .container.p-5
+            a.video(href="#" data-video="http://www.youtube.com/embed/CZNbqhmvYfg" 
+                    data-toggle="modal" data-target="#videoModal")
+              i.fas.fa-play.fa-3x
+            h1 See What We Do
+  
+  //- video modal
+  .modal.fade#videoModal
+    .modal-dialog 
+      .modal-content
+        .modal-body
+          button.close(data-dismiss="modal")
+            span &times;
+          iframe(src="" frameborder="0" height="350" width="100%" allowfullscreen)
+
+  //- photo gallery
+  section.py-5#gallery
+    .container
+      h1.text-center Photo Gallery
+      p.text-center Check Out our Photos
+      .row.mb-4
+        .col-md-4
+          a(href="https://source.unsplash.com/random/560x560" data-toggle="lightbox" data-gallery="img-gallery"
+            data-height="560" data-width="560")
+            img.img-fluid(src="https://source.unsplash.com/random/560x560" alt="")
+        .col-md-4
+          a(href="https://source.unsplash.com/random/561x561" data-toggle="lightbox" data-gallery="img-gallery"
+            data-height="561" data-width="561")
+            img.img-fluid(src="https://source.unsplash.com/random/561x561" alt="")
+        .col-md-4
+          a(href="https://source.unsplash.com/random/562x562" data-toggle="lightbox" data-gallery="img-gallery"
+            data-height="562" data-width="562")
+            img.img-fluid(src="https://source.unsplash.com/random/562x562" alt="")
+
+      .row.mb-4     
+        .col-md-4
+          a(href="https://source.unsplash.com/random/563x563" data-toggle="lightbox" data-gallery="img-gallery"
+            data-height="563" data-width="563")
+            img.img-fluid(src="https://source.unsplash.com/random/563x563" alt="")
+        .col-md-4
+          a(href="https://source.unsplash.com/random/564x564" data-toggle="lightbox" data-gallery="img-gallery"
+            data-height="564" data-width="564")
+            img.img-fluid(src="https://source.unsplash.com/random/564x564" alt="")
+        .col-md-4
+          a(href="https://source.unsplash.com/random/565x565" data-toggle="lightbox" data-gallery="img-gallery"
+            data-height="565" data-width="565")
+            img.img-fluid(src="https://source.unsplash.com/random/565x565" alt="")
+    
+  //- newsletter
+  section.text-center.p-5.bg-dark.text-white#newsletter
+    .container  
+      .row
+        .col
+          h1 Sign Up For Our newsletter
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iste tenetur 
+            | facilis tempore natus unde? Nobis numquam quod, eos earum odio accusamus a dolorem, 
+            | voluptatem doloremque non, ullam quam asperiores?
+          form.form-inline.justify-content-center
+            input.form-control.mb-2.mr-2(type="text" placeholder="Enter name")
+            input.form-control.mb-2.mr-2(type="email" placeholder="Enter Email")
+            button.btn.btn-primary.mb-2 Submit
+
+//- footer
+block footer
+
+

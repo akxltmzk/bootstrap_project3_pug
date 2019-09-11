@@ -1,0 +1,193 @@
+extends layout
+
+block content
+  //- navbar
+  nav.navbar.navbar-expand-sm.navbar-dark.bg-dark
+    .container     
+      a.navbar-brand(href="/index") Glozzom
+      button.navbar-toggler(data-toggle="collapse" data-target="#navbarCollapse")
+        span.navbar-toggler-icon
+      .collapse.navbar-collapse#navbarCollapse
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link(href="/index") Home
+          li.nav-item
+            a.nav-link(href="/about") About Us
+          li.nav-item.active
+            a.nav-link(href="/service") Services
+          li.nav-item
+            a.nav-link(href="/blog") Blog
+          li.nav-item
+            a.nav-link(href="/contact") Contact
+
+  //- page header
+  header#page-header
+    .container
+      .row  
+        .col-md-6.m-auto.text-center
+          h1 Our Services
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, error!
+  
+  //- services section
+  section.py-5#services
+    .container
+      .row
+        .col-md-4
+          .card.text-center
+            .card-header.bg-dark.text-white
+              h3 Services Plan One
+            .card-body
+              h4.card-title $59.99/Month
+              p.card-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ea?
+              ul.list-group
+                li.list-group-item
+                  i.fas.fa-check 
+                    span Feature One
+                li.list-group-item
+                  i.fas.fa-check 
+                    span Feature Two
+                li.list-group-item
+                  i.fas.fa-check 
+                    span Feature Three
+                li.list-group-item
+                  i.fas.fa-check 
+                    span Feature Four
+                li.list-group-item
+                  i.fas.fa-check 
+                    span Feature Five  
+                a.btn.btn-danger.btn-block.mt-2(href="#") Get It
+            .card-footer.text-muted
+              span 1 Year Plan          
+        .col-md-4
+          .card.text-center
+            .card-header.bg-dark.text-white
+              h3 Services Plan Two
+            .card-body
+              h4.card-title $99.99/Month
+              p.card-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ea?
+              ul.list-group
+                li.list-group-item
+                  i.fas.fa-check 
+                    span Feature One
+                li.list-group-item
+                  i.fas.fa-check 
+                    span Feature Two
+                li.list-group-item
+                  i.fas.fa-check 
+                    span Feature Three
+                li.list-group-item
+                  i.fas.fa-check 
+                    span Feature Four
+                li.list-group-item
+                  i.fas.fa-check 
+                    span Feature Five  
+                a.btn.btn-danger.btn-block.mt-2(href="#") Get It
+            .card-footer.text-muted
+              span 1 Year Plan  
+        .col-md-4
+          .card.text-center
+            .card-header.bg-dark.text-white
+              h3 Services Plan Three
+            .card-body
+              h4.card-title $129.99/Month
+              p.card-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ea?
+              ul.list-group
+                li.list-group-item
+                  i.fas.fa-check 
+                    span Feature One
+                li.list-group-item
+                  i.fas.fa-check 
+                    span Feature Two
+                li.list-group-item
+                  i.fas.fa-check 
+                    span Feature Three
+                li.list-group-item
+                  i.fas.fa-check 
+                    span Feature Four
+                li.list-group-item
+                  i.fas.fa-check 
+                    span Feature Five  
+                a.btn.btn-danger.btn-block.mt-2(href="#") Get It
+            .card-footer.text-muted
+              span 1 Year Plan                       
+  
+  //- faq
+  section.p-5.bg-dark.text-white#faq
+    .container
+      h1.text-center Frequently Asked Questions
+      hr
+      .row
+        .col-md-6
+          #accordion
+            .card
+              .card-header
+                h5.mb-0
+                  a(href="#collapseOne" data-toggle="collapse" data-parent="#accordion") Question One
+                .collapse#collapseOne
+                  .card-body
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque illum quas nostrum culpa
+                    | voluptatum. Quisquam fuga molestias illo iusto dolorem? Quos similique blanditiis provident iusto
+                    | tempora dolore aspernatur delectus placeat corporis ullam, quam veniam laudantium ex aliquid.
+                    | Accusantium, laudantium!
+            .card
+              .card-header
+                h5.mb-0
+                  a(href="#collapseTwo" data-toggle="collapse" data-parent="#accordion") Question Two
+                .collapse#collapseTwo
+                  .card-body
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque illum quas nostrum culpa
+                    | voluptatum. Quisquam fuga molestias illo iusto dolorem? Quos similique blanditiis provident iusto
+                    | tempora dolore aspernatur delectus placeat corporis ullam, quam veniam laudantium ex aliquid.
+                    | Accusantium, laudantium!
+
+            .card
+              .card-header
+                h5.mb-0
+                  a(href="#collapseThree" data-toggle="collapse" data-parent="#accordion") Question Three
+                .collapse#collapseThree
+                  .card-body
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque illum quas nostrum culpa
+                    | voluptatum. Quisquam fuga molestias illo iusto dolorem? Quos similique blanditiis provident iusto
+                    | tempora dolore aspernatur delectus placeat corporis ullam, quam veniam laudantium ex aliquid.
+                    | Accusantium, laudantium!
+
+        .col-md-6
+          #accordion
+            .card
+              .card-header
+                h5.mb-0
+                  a(href="#collapseFour" data-toggle="collapse" data-parent="#accordion") Question Four
+                .collapse#collapseFour
+                  .card-body
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque illum quas nostrum culpa
+                    | voluptatum. Quisquam fuga molestias illo iusto dolorem? Quos similique blanditiis provident iusto
+                    | tempora dolore aspernatur delectus placeat corporis ullam, quam veniam laudantium ex aliquid.
+                    | Accusantium, laudantium!
+            .card
+              .card-header
+                h5.mb-0
+                  a(href="#collapseFive" data-toggle="collapse" data-parent="#accordion") Question Five
+                .collapse#collapseFive
+                  .card-body
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque illum quas nostrum culpa
+                    | voluptatum. Quisquam fuga molestias illo iusto dolorem? Quos similique blanditiis provident iusto
+                    | tempora dolore aspernatur delectus placeat corporis ullam, quam veniam laudantium ex aliquid.
+                    | Accusantium, laudantium!
+
+            .card
+              .card-header
+                h5.mb-0
+                  a(href="#collapseSix" data-toggle="collapse" data-parent="#accordion") Question Six
+                .collapse#collapseSix
+                  .card-body
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque illum quas nostrum culpa
+                    | voluptatum. Quisquam fuga molestias illo iusto dolorem? Quos similique blanditiis provident iusto
+                    | tempora dolore aspernatur delectus placeat corporis ullam, quam veniam laudantium ex aliquid.
+                    | Accusantium, laudantium!
+
+  //- footer
+  block footer
+
+
+
+      

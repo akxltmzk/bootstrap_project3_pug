@@ -1,0 +1,123 @@
+extends layout
+
+block content
+  //- navbar
+  nav.navbar.navbar-expand-sm.navbar-dark.bg-dark
+    .container     
+      a.navbar-brand(href="/index") Glozzom
+      button.navbar-toggler(data-toggle="collapse" data-target="#navbarCollapse")
+        span.navbar-toggler-icon
+      .collapse.navbar-collapse#navbarCollapse
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link(href="/index") Home
+          li.nav-item.active
+            a.nav-link(href="/about") About Us
+          li.nav-item
+            a.nav-link(href="/service") Services
+          li.nav-item
+            a.nav-link(href="/blog") Blog
+          li.nav-item
+            a.nav-link(href="/contact") Contact
+
+  //- page header
+  header#page-header
+    .container
+      .row
+        .col-md-6.m-auto.text-center
+          h1 About Us
+          p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, inventore!
+
+  //- about section
+  section.py-3#about
+    .container
+      .row
+        .col-md-6
+          h1 What We Do
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis hic alias autem. 
+            | Fugiat repellendus quidem ipsum officiis earum, qui, accusantium quis reprehenderit id vel
+            | explicabo soluta ducimus exercitationem? Molestiae repudiandae ab optio laudantium dicta sunt debitis 
+            | error odio. Unde, ipsa!
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis hic alias autem. 
+            | Fugiat repellendus quidem ipsum officiis earum, qui, accusantium quis reprehenderit id vel
+            | explicabo soluta ducimus exercitationem? Molestiae repudiandae ab optio laudantium dicta sunt debitis 
+            | error odio. Unde, ipsa!
+
+        .col-md-6
+          img.img-fluid.rounded-circle.d-none.d-md-block.about-img(src=
+              "https://source.unsplash.com/random/500x500/?technology" alt="")
+  
+  //- icon boxes
+  section.p-5#icon-boxes
+    .container
+      .row.mb-4
+        .col-md-4
+          .card.bg-danger.text-white.text-center
+            .card-body  
+              i.fas.fa-building.fa-3x
+              h3 Sample Heading
+              | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, architecto?
+        .col-md-4
+          .card.bg-dark.text-white.text-center
+            .card-body  
+              i.fas.fa-bullhorn.fa-3x
+              h3 Sample Heading
+              | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, architecto?      
+
+        .col-md-4
+          .card.bg-danger.text-white.text-center
+            .card-body  
+              i.fas.fa-comment.fa-3x
+              h3 Sample Heading
+              | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, architecto?
+
+      .row.mb-4
+        .col-md-4
+          .card.bg-dark.text-white.text-center
+            .card-body  
+              i.fas.fa-comment.fa-3x
+              h3 Sample Heading
+              | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, architecto?
+        .col-md-4
+          .card.bg-danger.text-white.text-center
+            .card-body  
+              i.fas.fa-credit-card.fa-3x
+              h3 Sample Heading
+              | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, architecto?      
+
+        .col-md-4
+          .card.bg-dark.text-white.text-center
+            .card-body  
+              i.fas.fa-socks.fa-3x
+              h3 Sample Heading
+              | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, architecto?
+
+  //- testimonials
+  section.p-4.bg-dark.text-white
+    .container
+      h2.text-center Testimonials
+      .row.text-center
+        .col
+          .slider
+            .blockquote-container
+              blockquote.blockquote
+                p.mb-0 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, culpa!
+                footer.blockquote-footer John Doe From
+                  cite(title="Company 1")  Company 1
+            .blockquote-container
+              blockquote.blockquote
+                p.mb-0 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, culpa!
+                footer.blockquote-footer Sam Smith From
+                  cite(title="Company 2")  Company 2
+            .blockquote-container
+              blockquote.blockquote
+                p.mb-0 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, culpa!
+                footer.blockquote-footer Meghan Williams From
+                  cite(title="Company 3")  Company 3
+                                                    
+  //- footer
+  block footer
+
+      
+
+

@@ -1,0 +1,98 @@
+extends layout
+
+block content
+  //- navbar
+  nav.navbar.navbar-expand-sm.navbar-dark.bg-dark
+    .container     
+      a.navbar-brand(href="/index") Glozzom
+      button.navbar-toggler(data-toggle="collapse" data-target="#navbarCollapse")
+        span.navbar-toggler-icon
+      .collapse.navbar-collapse#navbarCollapse
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link(href="/index") Home
+          li.nav-item
+            a.nav-link(href="/about") About Us
+          li.nav-item
+            a.nav-link(href="/service") Services
+          li.nav-item.active
+            a.nav-link(href="/blog") Blog
+          li.nav-item
+            a.nav-link(href="/contact") Contact
+
+  //- page header
+  header#page-header
+    .container
+      .row  
+        .col-md-6.m-auto.text-center
+          h1 Read Our Blog
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, error!
+  
+  //- blog section
+  section.py-3#blog
+    .container
+      .row
+        .col
+          .card-columns
+            .card
+              img.img-fluid.card-img-top(src="https://source.unsplash.com/random/300x200" alt="")
+              .card-body
+                h4.card-title Blog Post One
+                small.text-muted Written by Jeff on 05/20
+                hr
+                p.card-text
+                  | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate architecto alias sequi quam ipsum,
+                  | inventore sapiente quas hic, numquam officia odit doloremque ratione iste perferendis. Ducimus vitae
+                  | consequatur alias eum.
+
+            .card.p-3
+              blockquote.card-blockquote.card-body
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt perspiciatis neque, incidunt itaque
+                  | aut beatae.
+                  footer.blockquote-footer
+                    small.text-muted Some Famouse in 
+                      cite(title="Source Title") Source Title
+
+            .card
+              img.img-fluid.card-img-top(src="https://source.unsplash.com/random/301x201" alt="")
+              .card-body
+                h4.card-title Blog Post Two
+                small.text-muted Written by Karen on 05/22
+                hr
+                p.card-text
+                  | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate architecto alias sequi quam ipsum,
+                  | inventore sapiente quas hic, numquam officia odit doloremque ratione iste perferendis. Ducimus vitae
+                  | consequatur alias eum.
+
+            .card.p-3
+              blockquote.card-blockquote.card-body
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt perspiciatis neque, incidunt itaque
+                  | aut beatae.
+                  footer.blockquote-footer
+                    small.text-muted Some Famouse in 
+                      cite(title="Source Title") Source Title
+
+            .card.bg-danger.text-white
+              img.img-fluid.card-img-top(src="https://source.unsplash.com/random/302x202" alt="")
+              .card-body
+                h4.card-title Blog Post Three
+                small.text-muted Written Harry on 05/23
+                hr
+                p.card-text
+                  | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate architecto alias sequi quam ipsum,
+                  | inventore sapiente quas hic, numquam officia odit doloremque ratione iste perferendis. Ducimus vitae
+                  | consequatur alias eum.
+
+            .card.p-3
+              blockquote.card-blockquote.card-body
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt perspiciatis neque, incidunt itaque
+                  | aut beatae.
+                  footer.blockquote-footer
+                    small.text-muted Some Famouse in 
+                      cite(title="Source Title") Source Title
+  //- footer
+  block footer
+
+
+
+      
